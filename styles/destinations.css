@@ -1,0 +1,56 @@
+header {
+    position: static;
+}
+body {
+    background: linear-gradient(
+        135deg,
+        rgb(196, 194, 194),
+        rgb(154, 185, 194)
+    );
+}
+main section {
+    padding: 30px 20px;
+}
+main ul {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+}
+main ul li {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: auto;
+}
+main ul li:nth-of-type(3) {
+    grid-column: 1 / 3;
+}
+main ul li:nth-of-type(10) {
+    grid-column: 1 / 3;
+}
+main ul li img {
+    width: 200px;
+    object-fit: cover;
+}
+main ul li .item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+main ul li .item-container .item-content-action {
+    text-align: right;
+}
+    
+main ul li .item-container .item-content-action a {
+    color: rgb(12, 118, 122);
+    padding: 10px 20px;
+}
+main ul li .item-container .item-content-action a:hover {
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgb(5, 54, 56)
+}
